@@ -1,0 +1,18 @@
+<!-- app/views/users/index.html.erb -->
+<div class="container d-flex align-items-center justify-content-center">
+  <div>
+    <br />
+    <br />
+    <h1>Schedule Me</h1>
+    <p>We are excited to have you.</p>
+    <br />
+
+    <%= link_to "Set office hours", edit_user_path(@current_user), class: "btn btn-primary", data: { turbo_frame: "remote_modal" } %>
+    <%= link_to "Go to Calendar", dashboard_path, class: "btn btn-primary", data: { turbo_frame: "dashboard_content" } %>
+
+    <div class="container" id="dashboard_content" data-controller="dashboard">
+      <!-- Initially empty Turbo Frame -->
+      <turbo-frame id="dashboard_frame"></turbo-frame>
+    </div>
+  </div>
+</div>

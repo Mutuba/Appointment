@@ -1,0 +1,32 @@
+<div class="simple-calendar">
+  <div class="calendar-heading">
+    <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view, class: 'day-link' %>
+    <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view, class: 'day-link' %>
+  </div>
+
+    <div class="table-container">
+    <table class="table">
+       <thead class="sticky-top bg-light">
+        <tr>
+          <% calendar.date_range.slice(0, 7).each do |day| %>
+            <th>
+              <small><%= t('date.abbr_day_names')[day.wday] %><br></small>
+              <h5><%= day.day %> </h5>
+            </th>
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+        <% (0..23).each do |hour| %>
+          <tr>
+            <% calendar.date_range.each do |day| %>
+              <td class="day_calendar">
+                <%= "#{hour}:00" %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+// app/assets/stylesheets/simple_calendar_custom.scss
+@import "bootstrap";
+
+.mutuba {
+  background-color: rgb(127, 255, 165);
+  font-size: large;
+  border-radius: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-color: transparent;
+}
+
+.simple-calendar {
+  .calendar-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .calendar-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .table-container {
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    th {
+      text-align: center;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    td {
+      text-align: center;
+      border: 1px solid #ddd;
+      vertical-align: top;
+      height: 5.75rem;
+      width: 5.75rem;
+    }
+
+    td.day_calendar {
+      text-align: center;
+      border: 1px solid #ddd;
+      vertical-align: top;
+      height: 2rem;
+    }
+
+    td.week_calendar {
+      text-align: center;
+      border: 1px solid #ddd;
+      vertical-align: top;
+      height: 2rem;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    td {
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+  }
+}

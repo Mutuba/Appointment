@@ -1,0 +1,51 @@
+<!-- app/views/dashboard/_dashboard_content.html.erb -->
+
+<div data-controller="dashboard">
+  <div class="d-flex justify-content-end mb-3">
+    <div class="dropdown" data-target="dashboard.dropdown" style="">
+      <button
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        id="viewDropdown"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <%= case view when 'month' then 'Month' when 'week' then 'Week' when 'day' then 'Day' else 'Month' end %>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="viewDropdown" style="max-height: 100px; overflow-y: auto">
+        <li>
+          <%= link_to "Month", '#', class: 'dropdown-item', data: { view: 'month' } %>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <%= link_to "Week", '#', class: 'dropdown-item', data: { view: 'week' } %>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+        <li>
+          <%= link_to "Day", '#', class: 'dropdown-item', data: { view: 'day' } %>
+        </li>
+        <li><hr class="dropdown-divider" /></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="calendar-content">
+    <% case view when 'month' %>
+      <%= month_calendar do |date| %>
+        <%= date.day %>
+      <% end %>
+    <% when 'week' %>
+      <%= week_calendar(number_of_weeks: 1) do |date| %>
+        <%= date.day %>
+      <% end %>
+    <% when 'day' %>
+      <%= day_calendar(number_of_days: 1) do |calendar| %>
+        <%= render partial: 'simple_calendar/day_calendar', locals: { calendar: calendar } %>
+      <% end %>
+    <% else %>
+      <%= month_calendar do |date| %>
+        <%= date.day %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

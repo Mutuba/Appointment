@@ -1,0 +1,4 @@
+<!-- app/views/dashboard/index.turbo_stream.erb -->
+<turbo-stream action="replace" target="dashboard_content">
+  <%= render partial: 'dashboard_content', locals: { view: params[:view] || 'month' } %>
+</turbo-stream>

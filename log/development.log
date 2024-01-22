@@ -1,0 +1,899 @@
+Started GET "/" for ::1 at 2024-01-21 12:00:51 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 4366.3ms | Allocations: 126126)
+Completed 500 Internal Server Error in 4440ms (ActiveRecord: 0.0ms | Allocations: 129819)
+
+
+  
+ActionView::Template::Error (Multiple files with the same output path cannot be linked ("application.css")
+In "/Users/danielmutuba/Desktop/MyGreatApp/app/assets/config/manifest.js" these files were linked:
+  - /Users/danielmutuba/Desktop/MyGreatApp/app/assets/stylesheets/application.css
+  - /Users/danielmutuba/Desktop/MyGreatApp/app/assets/stylesheets/application.scss
+):
+  
+sprockets (4.2.1) lib/sprockets/base.rb:100:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/" for ::1 at 2024-01-21 12:00:56 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 26111)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 26346)
+
+
+  
+ActionView::Template::Error (Multiple files with the same output path cannot be linked ("application.css")
+In "/Users/danielmutuba/Desktop/MyGreatApp/app/assets/config/manifest.js" these files were linked:
+  - /Users/danielmutuba/Desktop/MyGreatApp/app/assets/stylesheets/application.css
+  - /Users/danielmutuba/Desktop/MyGreatApp/app/assets/stylesheets/application.scss
+):
+  
+sprockets (4.2.1) lib/sprockets/base.rb:100:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/" for ::1 at 2024-01-21 12:01:32 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 41407)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms | Allocations: 41643)
+
+
+  
+ActionView::Template::Error (Asset `application.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.css
+
+and restart your server):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2024-01-21 12:01:51 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 48573)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms | Allocations: 48882)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:02 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 293)
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 51372)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms | Allocations: 53789)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:26 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 6615)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 7243)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:30 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6222)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 6482)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:31 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6234)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 6492)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:36 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6622)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 7250)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:37 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 6204)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 6466)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:02:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6207)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 6465)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:03:02 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 126)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6708)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 7337)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:03:25 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6696)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 7325)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:04:46 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 2975.5ms | Allocations: 39077)
+Completed 200 OK in 2979ms (Views: 2978.9ms | ActiveRecord: 0.0ms | Allocations: 39706)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:05:09 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2551.4ms | Allocations: 37083)
+Completed 200 OK in 2554ms (Views: 2553.4ms | ActiveRecord: 0.0ms | Allocations: 37342)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:05:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2584.2ms | Allocations: 37497)
+Completed 200 OK in 2586ms (Views: 2585.0ms | ActiveRecord: 0.0ms | Allocations: 37756)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:06:00 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2667.8ms | Allocations: 37590)
+Completed 200 OK in 2669ms (Views: 2668.4ms | ActiveRecord: 0.0ms | Allocations: 37849)
+
+
+Started GET "/" for ::1 at 2024-01-21 12:06:21 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2628.6ms | Allocations: 37584)
+Completed 200 OK in 2629ms (Views: 2629.0ms | ActiveRecord: 0.0ms | Allocations: 37842)
+
+
+Started GET "/" for ::1 at 2024-01-21 17:25:22 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 2726.5ms | Allocations: 77088)
+Completed 500 Internal Server Error in 2736ms (ActiveRecord: 0.0ms | Allocations: 77717)
+
+
+  
+ActionView::Template::Error (Asset `sample.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link sample.css
+
+and restart your server):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:      <%= stylesheet_link_tag "sample", "data-turbo-track": "reload" %>
+    11:     <%= javascript_importmap_tags %>
+    12:   </head>
+    13: 
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2024-01-21 17:25:36 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 54.1ms | Allocations: 32895)
+Completed 200 OK in 55ms (Views: 54.6ms | ActiveRecord: 0.0ms | Allocations: 33155)
+
+
+Started GET "/" for ::1 at 2024-01-21 17:25:52 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 643.5ms | Allocations: 15181)
+Completed 200 OK in 646ms (Views: 644.7ms | ActiveRecord: 0.0ms | Allocations: 15440)
+
+
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20231220114150)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220114150"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddFullnameTimezoneAvatarUrlUidOfficeHoursStartOfficeHoursEndToUsers (20231220120432)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "office_hours_start" time[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "office_hours_end" time[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "fullname" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "timezone" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "avatar_url" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220120432"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateEvents (20231220124927)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "color" varchar, "duration" integer, "customer_paid" boolean, "payment_required" boolean, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220124927"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBookings (20231220131349)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer, "first_name" varchar, "last_name" varchar, "email" varchar, "starts_at" datetime(6), "ends_at" datetime(6), "customer_paid" boolean, "event_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ed4eb3baca"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_event_id" ON "bookings" ("event_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220131349"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddDescriptionToEvents (20231220132406)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "events" ADD "description" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220132406"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddProviderToUsers (20231220140315)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231220140315"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddFirstNameLastNameToUsers (20231222174804)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "first_name" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "last_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231222174804"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RenameColumnFullnameToFullNameOnUsers (20231222175900)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "office_hours_start" time DEFAULT NULL, "office_hours_end" time DEFAULT NULL, "full_name" varchar DEFAULT NULL, "timezone" varchar DEFAULT NULL, "avatar_url" varchar DEFAULT NULL, "uid" varchar DEFAULT NULL, "provider" varchar DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","fullname","timezone","avatar_url","uid","provider","first_name","last_name" FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "office_hours_start" time DEFAULT NULL, "office_hours_end" time DEFAULT NULL, "full_name" varchar DEFAULT NULL, "timezone" varchar DEFAULT NULL, "avatar_url" varchar DEFAULT NULL, "uid" varchar DEFAULT NULL, "provider" varchar DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name" FROM "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231222175900"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveDefaultFromEmail (20231222180910)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "office_hours_start" time DEFAULT NULL, "office_hours_end" time DEFAULT NULL, "full_name" varchar DEFAULT NULL, "timezone" varchar DEFAULT NULL, "avatar_url" varchar DEFAULT NULL, "uid" varchar DEFAULT NULL, "provider" varchar DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name" FROM "users"[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "email" varchar NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "office_hours_start" time DEFAULT NULL, "office_hours_end" time DEFAULT NULL, "full_name" varchar DEFAULT NULL, "timezone" varchar DEFAULT NULL, "avatar_url" varchar DEFAULT NULL, "uid" varchar DEFAULT NULL, "provider" varchar DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","office_hours_start","office_hours_end","full_name","timezone","avatar_url","uid","provider","first_name","last_name" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231222180910"]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddNotNullToDescriptionToEvents (20231223124311)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aevents_on_user_id" ON "aevents" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aevents" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "events"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar DEFAULT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "events" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "aevents"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aevents_on_user_id" ON "aevents" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aevents" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "events" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231223124311"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddEmailNotNullToBookings (20231223125559)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abookings" ("id" integer NOT NULL PRIMARY KEY, "status" integer DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "starts_at" datetime(6) DEFAULT NULL, "ends_at" datetime(6) DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "event_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_abookings_on_event_id" ON "abookings" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "abookings" ("id","status","first_name","last_name","email","starts_at","ends_at","customer_paid","event_id","created_at","updated_at")
+                     SELECT "id","status","first_name","last_name","email","starts_at","ends_at","customer_paid","event_id","created_at","updated_at" FROM "bookings"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "bookings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "bookings" ("id" integer NOT NULL PRIMARY KEY, "status" integer DEFAULT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "email" varchar NOT NULL, "starts_at" datetime(6) DEFAULT NULL, "ends_at" datetime(6) DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "event_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ed4eb3baca"
+FOREIGN KEY ("event_id")
+  REFERENCES "events" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_bookings_on_event_id" ON "bookings" ("event_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "bookings" ("id","status","first_name","last_name","email","starts_at","ends_at","customer_paid","event_id","created_at","updated_at")
+                     SELECT "id","status","first_name","last_name","email","starts_at","ends_at","customer_paid","event_id","created_at","updated_at" FROM "abookings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abookings"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231223125559"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddStartAtEndAtToEvents (20240108081613)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aevents_on_user_id" ON "aevents" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aevents" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "events"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar NOT NULL, "start_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "events" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description" FROM "aevents"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aevents" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar NOT NULL, "start_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_aevents_on_user_id" ON "aevents" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "aevents" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description","start_at")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description","start_at" FROM "events"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "color" varchar DEFAULT NULL, "duration" integer DEFAULT NULL, "customer_paid" boolean DEFAULT NULL, "payment_required" boolean DEFAULT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar NOT NULL, "start_at" datetime(6) NOT NULL, "end_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_0cb5590091"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_events_on_user_id" ON "events" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "events" ("id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description","start_at")
+                     SELECT "id","name","color","duration","customer_paid","payment_required","user_id","created_at","updated_at","description","start_at" FROM "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "aevents"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20240108081613"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-01-22 08:14:07.093932"], ["updated_at", "2024-01-22 08:14:07.093932"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_in" for ::1 at 2024-01-22 11:14:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3255)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3357)
+Completed 500 Internal Server Error in 872ms (ActiveRecord: 0.3ms | Allocations: 988940)
+
+
+  
+ActionView::Template::Error (The asset "web_light_sq_SI.svg" is not present in the asset pipeline.
+):
+     5: 
+     6:     <!-- Add a Google OAuth button -->
+     7:   <%= button_to user_google_oauth2_omniauth_authorize_path, method: :post, data: { turbo: "false" }, params: { authenticity_token: form_authenticity_token }, class: "btn btn-link", style: "margin-top: 10px;", id: "google-sign-in-button" do %>
+     8:     <%= image_tag("web_light_sq_SI.svg", alt: "Google Sign In", class: "google-sign-in-image") %>
+     9:   <% end %>
+    10:   </div>
+    11: </div>
+  
+app/views/devise/sessions/new.html.erb:8
+app/views/devise/sessions/new.html.erb:7
+Started GET "/users/sign_in" for ::1 at 2024-01-22 11:16:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5055.3ms | Allocations: 160361)
+  Rendered layout layouts/application.html.erb (Duration: 5476.6ms | Allocations: 193483)
+Completed 500 Internal Server Error in 5662ms (ActiveRecord: 0.3ms | Allocations: 490002)
+
+
+  
+ActionView::Template::Error (Asset `simple_calendar_custom.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link simple_calendar_custom.css
+
+and restart your server):
+     7:     <%= csp_meta_tag %>
+     8:     <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" %>
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:      <%= stylesheet_link_tag 'simple_calendar_custom', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" %>
+    12:     <%= javascript_importmap_tags %>
+    13:     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  
+app/views/layouts/application.html.erb:10
+Started GET "/users/sign_in" for ::1 at 2024-01-22 11:16:57 +0300
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 878)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.5ms | Allocations: 222)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 551)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 65468)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 67563)
+
+
+Started POST "/users/auth/google_oauth2" for ::1 at 2024-01-22 11:17:00 +0300
+Started GET "/users/auth/google_oauth2/callback?state=7a143297354ba50a0d4ca34a84a987c4ebc57c5e71ff9053&code=4%2F0AfJohXkS2U_GjQjj63dbH0eoIYza4NMPXgBiuqkvvr4_HL5cjtG50Bn4fLRcaDVaF_6V7Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent" for ::1 at 2024-01-22 11:17:03 +0300
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"7a143297354ba50a0d4ca34a84a987c4ebc57c5e71ff9053", "code"=>"4/0AfJohXkS2U_GjQjj63dbH0eoIYza4NMPXgBiuqkvvr4_HL5cjtG50Bn4fLRcaDVaF_6V7Q", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"consent"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "108521230293548568524"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37:in `from_omniauth'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:37:in `from_omniauth'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "danielmutubait@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:37:in `from_omniauth'
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "office_hours_start", "office_hours_end", "full_name", "timezone", "avatar_url", "uid", "provider", "first_name", "last_name") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "danielmutubait@gmail.com"], ["encrypted_password", "$2a$12$.2KfhU3l.a8fNsxvRHTitO8AoxRUjSvkfXNKl1OoP5ZGyxcL1Jplm"], ["reset_password_token", nil], ["reset_password_sent_at", nil], ["remember_created_at", nil], ["created_at", "2024-01-22 08:17:04.934258"], ["updated_at", "2024-01-22 08:17:04.934258"], ["office_hours_start", nil], ["office_hours_end", nil], ["full_name", "Daniel Mutuba"], ["timezone", nil], ["avatar_url", "https://lh3.googleusercontent.com/a/ACg8ocL-RCOWDcARc-yp7YSOcLKXaHXL6nVfGQjR0wDUE9awJvs=s96-c"], ["uid", "108521230293548568524"], ["provider", "google_oauth2"], ["first_name", nil], ["last_name", nil]]
+  ↳ app/models/user.rb:37:in `from_omniauth'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:37:in `from_omniauth'
+Redirected to http://localhost:3000/
+Completed 302 Found in 299ms (ActiveRecord: 3.2ms | Allocations: 9348)
+
+
+Started GET "/" for ::1 at 2024-01-22 11:17:04 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/application_controller.rb:43:in `update_timezone'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "timezone" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2024-01-22 08:17:04.958116"], ["timezone", "UTC"], ["id", 1]]
+  ↳ app/controllers/application_controller.rb:43:in `update_timezone'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/application_controller.rb:43:in `update_timezone'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 337)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.4ms | Allocations: 257)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 364)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 7627)
+Completed 200 OK in 17ms (Views: 7.4ms | ActiveRecord: 1.0ms | Allocations: 13392)
+
+
+Started GET "/" for ::1 at 2024-01-22 11:17:49 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 124)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 342)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3055.6ms | Allocations: 42701)
+Completed 200 OK in 3068ms (Views: 3056.2ms | ActiveRecord: 0.2ms | Allocations: 45834)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 11:18:13 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 81.3ms | Allocations: 13861)
+  Rendered users/_remote_modal.html.erb (Duration: 88.1ms | Allocations: 14214)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 90.3ms | Allocations: 14502)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 91.2ms | Allocations: 14738)
+Completed 200 OK in 116ms (Views: 99.7ms | ActiveRecord: 0.3ms | Allocations: 18325)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 11:18:33 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 1.3ms | Allocations: 743)
+  Rendered users/_remote_modal.html.erb (Duration: 1.6ms | Allocations: 856)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 1.7ms | Allocations: 925)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 1.8ms | Allocations: 1021)
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 4129)
+
+
+Started GET "/dashboard" for ::1 at 2024-01-22 11:18:35 +0300
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.4ms | Allocations: 9768)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.8ms | Allocations: 10865)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 11140)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 252)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 359)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 18397)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.1ms | Allocations: 22111)
+
+
+Started GET "/dashboard" for ::1 at 2024-01-22 11:18:49 +0300
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 34.7ms | Allocations: 8508)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 38.9ms | Allocations: 8885)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 39.1ms | Allocations: 8960)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.4ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3077.5ms | Allocations: 51553)
+Completed 200 OK in 3119ms (Views: 3079.5ms | ActiveRecord: 0.2ms | Allocations: 54728)
+
+
+Started GET "/" for ::1 at 2024-01-22 11:19:33 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 124)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 4.9ms | Allocations: 239)
+  Rendered layouts/_navbar.html.erb (Duration: 5.3ms | Allocations: 342)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 7281)
+Completed 200 OK in 38ms (Views: 26.3ms | ActiveRecord: 0.2ms | Allocations: 10441)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 11:19:35 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 1.6ms | Allocations: 744)
+  Rendered users/_remote_modal.html.erb (Duration: 1.8ms | Allocations: 857)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 1.9ms | Allocations: 926)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 2.1ms | Allocations: 1021)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 4108)
+
+
+Started GET "/" for ::1 at 2024-01-22 11:21:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 631)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.6ms | Allocations: 475)
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 803)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 75226)
+Completed 200 OK in 260ms (Views: 78.2ms | ActiveRecord: 0.7ms | Allocations: 375323)
+
+
+Started GET "/" for ::1 at 2024-01-22 11:21:35 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 124)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 239)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 342)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 7282)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 10454)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 11:21:36 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 4.8ms | Allocations: 2155)
+  Rendered users/_remote_modal.html.erb (Duration: 5.8ms | Allocations: 2515)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 7.2ms | Allocations: 2799)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 7.9ms | Allocations: 3038)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 6631)
+
+
+Started GET "/dashboard" for ::1 at 2024-01-22 11:21:43 +0300
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.3ms | Allocations: 9777)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.8ms | Allocations: 10881)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 11158)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 252)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 359)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 18415)
+Completed 200 OK in 23ms (Views: 18.1ms | ActiveRecord: 0.1ms | Allocations: 22139)
+
+
+Started GET "/dashboard?view=week" for ::1 at 2024-01-22 11:21:48 +0300
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"week"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 2.4ms | Allocations: 1533)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 3.3ms | Allocations: 1945)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2018)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 9241)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.1ms | Allocations: 12433)
+
+
+Started GET "/dashboard?view=week" for ::1 at 2024-01-22 11:23:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"week"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 1.3ms | Allocations: 2588)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 2.2ms | Allocations: 3713)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4214)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.7ms | Allocations: 459)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 801)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 66492)
+Completed 200 OK in 245ms (Views: 56.2ms | ActiveRecord: 0.4ms | Allocations: 366690)
+
+
+Started GET "/dashboard?start_date=2024-01-29&view=week" for ::1 at 2024-01-22 11:23:24 +0300
+Processing by DashboardController#index as HTML
+  Parameters: {"start_date"=>"2024-01-29", "view"=>"week"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering dashboard/index.html.erb within layouts/turbo_rails/frame
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 1.0ms | Allocations: 1139)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 2.3ms | Allocations: 1509)
+  Rendered dashboard/index.html.erb within layouts/turbo_rails/frame (Duration: 2.4ms | Allocations: 1581)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 3.4ms | Allocations: 1820)
+Completed 200 OK in 9ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 5384)
+
+
+Started GET "/dashboard?view=week" for ::1 at 2024-01-22 11:23:31 +0300
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"week"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 0.9ms | Allocations: 1115)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 1.3ms | Allocations: 1444)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1516)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 8665)
+Completed 200 OK in 31ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 11850)
+
+
+Started GET "/dashboard?view=week" for ::1 at 2024-01-22 11:24:26 +0300
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"week"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 0.7ms | Allocations: 1802)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 1.0ms | Allocations: 2150)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2232)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 253)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 366)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 32863)
+Completed 200 OK in 57ms (Views: 48.9ms | ActiveRecord: 0.7ms | Allocations: 42132)
+
+
+Started GET "/dashboard?view=day" for ::1 at 2024-01-22 11:24:31 +0300
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"day"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_day_calendar.html.erb (Duration: 2.9ms | Allocations: 2210)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 5.7ms | Allocations: 2713)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2785)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 10003)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 13183)
+
+
+Started GET "/" for ::1 at 2024-01-22 12:03:40 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 331)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.5ms | Allocations: 254)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 361)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 7601)
+Completed 200 OK in 20ms (Views: 11.4ms | ActiveRecord: 0.6ms | Allocations: 11397)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 12:03:42 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 8.6ms | Allocations: 1931)
+  Rendered users/_remote_modal.html.erb (Duration: 13.7ms | Allocations: 2291)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 16.0ms | Allocations: 2574)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 16.1ms | Allocations: 2670)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 5831)
+
+
+Started PATCH "/users/1" for ::1 at 2024-01-22 12:04:13 +0300
+Processing by UsersController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"office_hours_start"=>"08:00", "office_hours_end"=>"16:00"}, "commit"=>"Save changes", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `block in update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "office_hours_start" = ?, "office_hours_end" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2024-01-22 09:04:13.820806"], ["office_hours_start", "2000-01-01 08:00:00"], ["office_hours_end", "2000-01-01 16:00:00"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `block in update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `block in update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms | Allocations: 6308)
+
+
+Started GET "/" for ::1 at 2024-01-22 12:04:13 +0300
+Processing by UsersController#index as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 124)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 239)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 342)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7330)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 10562)
+
+
+Started GET "/" for ::1 at 2024-01-22 12:04:34 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 307)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.9ms | Allocations: 431)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 745)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 8641)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 12587)
+
+
+Started GET "/users/1/edit" for ::1 at 2024-01-22 12:04:38 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 2.4ms | Allocations: 1195)
+  Rendered users/_remote_modal.html.erb (Duration: 7.5ms | Allocations: 1541)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 11.7ms | Allocations: 1822)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 12.9ms | Allocations: 2054)
+Completed 200 OK in 20ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 5665)
+
+

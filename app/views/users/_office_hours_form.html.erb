@@ -1,0 +1,28 @@
+        <%= form_with model: current_user do |form| %>
+          <div class="mb-3">
+            <%= form.label :office_hours_start, class: "form-label" %>
+            <%= form.time_field :office_hours_start, class: "form-control" %>
+            <div style="color: red">
+                <% if current_user.errors.include?(:office_hours_start) %>
+                    <% current_user.errors.full_messages_for(:office_hours_start).each do |error_message| %>
+                        <%= error_message %>.
+                    <% end %>
+                <% end %>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <%= form.label :office_hours_end, class: "form-label" %>
+            <%= form.time_field :office_hours_end, class: "form-control" %>
+
+           <div style="color: red">
+                <% if current_user.errors.include?(:office_hours_end) %>
+                    <% current_user.errors.full_messages_for(:office_hours_end).each do |error_message| %>
+                        <%= error_message %>.
+                    <% end %>
+                <% end %>
+            </div>
+          </div>
+
+          <input type="submit" name="commit" value="Save changes" class="btn btn-primary" data-disable-with="Save changes" />
+        <% end %>

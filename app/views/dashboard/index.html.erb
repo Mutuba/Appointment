@@ -1,0 +1,7 @@
+<!-- app/views/dashboard/index.html.erb -->
+
+<div class="container" id="dashboard_content">
+  <turbo-frame id="dashboard_content">
+    <%= render partial: 'dashboard_content', locals: { view: params[:view] || 'month' } %>
+  </turbo-frame>
+</div>
