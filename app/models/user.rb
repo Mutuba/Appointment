@@ -4,7 +4,7 @@
 #
 # Table name: users
 #
-#  id                     :integer          not null, primary key
+#  id                     :bigint           not null, primary key
 #  avatar_url             :string
 #  email                  :string           not null
 #  encrypted_password     :string           default(""), not null

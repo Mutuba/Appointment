@@ -4,7 +4,7 @@
 #
 # Table name: events
 #
-#  id               :integer          not null, primary key
+#  id               :bigint           not null, primary key
 #  color            :string
 #  customer_paid    :boolean
 #  description      :string           not null
@@ -15,7 +15,7 @@
 #  start_at         :datetime         not null
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
-#  user_id          :integer          not null
+#  user_id          :bigint           not null
 #
 # Indexes
 #
@@ -23,7 +23,7 @@
 #
 # Foreign Keys
 #
-#  user_id  (user_id => users.id)
+#  fk_rails_...  (user_id => users.id)
 #
 class Event < ApplicationRecord
   belongs_to :user
