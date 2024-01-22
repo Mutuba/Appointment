@@ -20,11 +20,11 @@
           <tr>
             <% week.each do |day| %>
               <%= content_tag :td, class: calendar.td_classes_for(day) do %>
-<%= link_to edit_user_path(@current_user), class: "calendar-cell-link", data: { turbo_frame: "remote_modal" } do %>
-  <div class="calendar-day">
-    <% passed_block.call day, sorted_events.fetch(day, []) %>
-  </div>
-<% end %>
+                <%= link_to edit_user_path(@current_user), class: "calendar-cell-link", data: { turbo_frame: "remote_modal" } do %>
+                  <div class="calendar-day">
+                    <% passed_block.call day, sorted_events.fetch(day, []) %>
+                  </div>
+                <% end %>
 
               <% end %>
             <% end %>
