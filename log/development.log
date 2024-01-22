@@ -2350,3 +2350,20 @@ Processing by UsersController#edit as HTML
 Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 2998)
 
 
+Started GET "/dashboard?view=day" for 105.163.157.88 at 2024-01-22 17:12:38 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"day"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_day_calendar.html.erb (Duration: 17.1ms | Allocations: 2340)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 19.0ms | Allocations: 3173)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 3438)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.0ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 10796)
+Completed 200 OK in 60ms (Views: 37.5ms | ActiveRecord: 0.6ms | Allocations: 13610)
+
+

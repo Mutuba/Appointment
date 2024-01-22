@@ -21,7 +21,7 @@
           <tr>
               <td class="day_calendar">
               <%= link_to edit_user_path(@current_user), class: "btn calendar-data", data: { turbo_frame: "remote_modal" } do %>
-                <%= "#{hour}:00" %>
+                  <%= sprintf("%02d:00", hour) %>
                 <% end %>
               </td>
           </tr>
