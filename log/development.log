@@ -1233,3 +1233,679 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 40ms (Views: 28.0ms | ActiveRecord: 0.2ms | Allocations: 18145)
 
 
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 15:56:45 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 14.9ms | Allocations: 8860)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 19.5ms | Allocations: 9837)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 10108)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.1ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 18375)
+Completed 200 OK in 83ms (Views: 66.1ms | ActiveRecord: 0.8ms | Allocations: 21391)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 15:57:55 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.1ms | Allocations: 8984)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 8.3ms | Allocations: 9962)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 10232)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.6ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 18501)
+Completed 200 OK in 64ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 21346)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 15:58:23 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 2.3ms | Allocations: 1213)
+  Rendered users/_remote_modal.html.erb (Duration: 5.4ms | Allocations: 1563)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 6.5ms | Allocations: 1846)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 7.6ms | Allocations: 2081)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 4704)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 15:58:27 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 0.7ms | Allocations: 780)
+  Rendered users/_remote_modal.html.erb (Duration: 0.8ms | Allocations: 893)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 0.9ms | Allocations: 962)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 1.0ms | Allocations: 1057)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 3036)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 15:58:30 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 1.6ms | Allocations: 780)
+  Rendered users/_remote_modal.html.erb (Duration: 1.8ms | Allocations: 893)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 2.0ms | Allocations: 962)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 2.1ms | Allocations: 1057)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 3017)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 15:58:32 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 1.7ms | Allocations: 780)
+  Rendered users/_remote_modal.html.erb (Duration: 1.9ms | Allocations: 893)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 2.1ms | Allocations: 962)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 2.2ms | Allocations: 1057)
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 3023)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 15:59:12 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.0ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 13.6ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 2617.5ms | Allocations: 50699)
+Completed 200 OK in 2622ms (Views: 2617.9ms | ActiveRecord: 0.1ms | Allocations: 52737)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:00:10 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.9ms | Allocations: 8981)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 9.2ms | Allocations: 9959)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 10230)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.8ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 17590)
+Completed 200 OK in 48ms (Views: 21.5ms | ActiveRecord: 15.7ms | Allocations: 20432)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:01:07 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.2ms | Allocations: 8981)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 12.0ms | Allocations: 9958)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 10226)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.8ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 613.6ms | Allocations: 26249)
+Completed 200 OK in 634ms (Views: 616.7ms | ActiveRecord: 0.3ms | Allocations: 29096)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:02:39 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.7ms | Allocations: 8512)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 6.1ms | Allocations: 8890)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 8965)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 585.9ms | Allocations: 23827)
+Completed 200 OK in 603ms (Views: 586.3ms | ActiveRecord: 0.2ms | Allocations: 25864)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:05:05 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | Allocations: 8942)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 9.6ms | Allocations: 9919)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 10190)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.0ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 17548)
+Completed 200 OK in 47ms (Views: 31.3ms | ActiveRecord: 0.3ms | Allocations: 20378)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:05:15 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.0ms | Allocations: 8476)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.6ms | Allocations: 8853)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 8928)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 15113)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 17138)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:06:15 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.4ms | Allocations: 8981)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 8.7ms | Allocations: 9958)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 10226)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.0ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.8ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 17584)
+Completed 200 OK in 43ms (Views: 33.2ms | ActiveRecord: 0.2ms | Allocations: 20399)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:08:47 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.6ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 6.4ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 608.2ms | Allocations: 23818)
+Completed 200 OK in 619ms (Views: 609.0ms | ActiveRecord: 0.3ms | Allocations: 25855)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:12:25 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.8ms | Allocations: 13711)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 11.4ms | Allocations: 14688)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 14958)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.1ms | Allocations: 426)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 740)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 22310)
+Completed 200 OK in 45ms (Views: 28.6ms | ActiveRecord: 0.2ms | Allocations: 25136)
+
+
+Started POST "/users/1/edit" for 105.163.157.88 at 2024-01-22 16:12:28 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [POST] "/users/1/edit"):
+  
+Started GET "/" for 105.163.157.88 at 2024-01-22 16:12:34 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 308)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 252)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 359)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6602)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.1ms | Allocations: 8944)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:12:37 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.5ms | Allocations: 13227)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 10.4ms | Allocations: 13604)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 13679)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 19865)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.1ms | Allocations: 21895)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:12:43 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.6ms | Allocations: 8981)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 11.6ms | Allocations: 9958)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 10226)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.7ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 17584)
+Completed 200 OK in 41ms (Views: 25.9ms | ActiveRecord: 0.3ms | Allocations: 20401)
+
+
+Started GET "/" for 105.163.157.88 at 2024-01-22 16:12:59 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 308)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 252)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 359)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6600)
+Completed 200 OK in 13ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 8941)
+
+
+Started GET "/" for 105.163.157.88 at 2024-01-22 16:13:03 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 239)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 342)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6321)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 8323)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:13:46 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 3.9ms | Allocations: 8981)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 10.7ms | Allocations: 9958)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 10226)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.8ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 14.3ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 17584)
+Completed 200 OK in 48ms (Views: 36.9ms | ActiveRecord: 0.2ms | Allocations: 20414)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:13:53 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.4ms | Allocations: 8512)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 10.2ms | Allocations: 8889)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 8964)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 15150)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.1ms | Allocations: 17180)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 16:14:08 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 2.7ms | Allocations: 1213)
+  Rendered users/_remote_modal.html.erb (Duration: 3.8ms | Allocations: 1563)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 5.1ms | Allocations: 1849)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 5.7ms | Allocations: 2084)
+Completed 200 OK in 16ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 4697)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:17:39 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.4ms | Allocations: 8982)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 8.4ms | Allocations: 9959)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 10227)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.3ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.8ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 17586)
+Completed 200 OK in 45ms (Views: 33.6ms | ActiveRecord: 0.2ms | Allocations: 20407)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:19:55 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.0ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 14.2ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 711.6ms | Allocations: 23804)
+Completed 200 OK in 723ms (Views: 712.3ms | ActiveRecord: 0.3ms | Allocations: 25835)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:21:37 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.1ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.8ms | Allocations: 8889)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 8964)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 609.5ms | Allocations: 23806)
+Completed 200 OK in 624ms (Views: 610.1ms | ActiveRecord: 0.2ms | Allocations: 25857)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:21:48 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.2ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 6.7ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 15148)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 17184)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:22:21 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.4ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.3ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 614.1ms | Allocations: 23802)
+Completed 200 OK in 644ms (Views: 614.8ms | ActiveRecord: 0.2ms | Allocations: 25841)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:22:27 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.8ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.8ms | Allocations: 8889)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 8964)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 15151)
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 0.2ms | Allocations: 17205)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 16:22:33 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 2.3ms | Allocations: 1213)
+  Rendered users/_remote_modal.html.erb (Duration: 3.4ms | Allocations: 1563)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 4.7ms | Allocations: 1849)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 5.5ms | Allocations: 2084)
+Completed 200 OK in 15ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 4710)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:23:45 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.4ms | Allocations: 8982)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 10.4ms | Allocations: 9959)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 10227)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 1.1ms | Allocations: 429)
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 743)
+  Rendered layouts/_alerts.html.erb (Duration: 0.9ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 17585)
+Completed 200 OK in 46ms (Views: 28.1ms | ActiveRecord: 0.3ms | Allocations: 20418)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:24:15 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.2ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 10.2ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 15149)
+Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 0.1ms | Allocations: 17189)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:24:43 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 17.2ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 22.1ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 608.9ms | Allocations: 23814)
+Completed 200 OK in 620ms (Views: 613.5ms | ActiveRecord: 0.1ms | Allocations: 25848)
+
+
+Started GET "/users/1/edit" for 105.163.157.88 at 2024-01-22 16:24:52 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb
+  Rendering users/edit.html.erb within layouts/turbo_rails/frame
+  Rendered users/_office_hours_form.html.erb (Duration: 2.0ms | Allocations: 1213)
+  Rendered users/_remote_modal.html.erb (Duration: 3.0ms | Allocations: 1563)
+  Rendered users/edit.html.erb within layouts/turbo_rails/frame (Duration: 4.3ms | Allocations: 1851)
+  Rendered layout /opt/homebrew/lib/ruby/gems/3.2.0/gems/turbo-rails-1.5.0/app/views/layouts/turbo_rails/frame.html.erb (Duration: 4.9ms | Allocations: 2086)
+Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 4703)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:25:16 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.1ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 6.0ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 608.6ms | Allocations: 23813)
+Completed 200 OK in 623ms (Views: 609.4ms | ActiveRecord: 0.2ms | Allocations: 25850)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:25:21 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 3.9ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 4.3ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 15148)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 17204)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:25:43 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.9ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 12.8ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.4ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 609.3ms | Allocations: 23838)
+Completed 200 OK in 627ms (Views: 610.0ms | ActiveRecord: 0.3ms | Allocations: 25877)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:25:48 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.1ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 8.1ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 15148)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.1ms | Allocations: 17188)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:26:00 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.4ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.7ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 2.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 608.3ms | Allocations: 23817)
+Completed 200 OK in 617ms (Views: 608.9ms | ActiveRecord: 0.3ms | Allocations: 25865)
+
+
+Started GET "/dashboard" for 105.163.157.88 at 2024-01-22 16:26:32 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 38.3ms | Allocations: 8512)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 39.2ms | Allocations: 8889)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 8964)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 635.9ms | Allocations: 23832)
+Completed 200 OK in 724ms (Views: 706.4ms | ActiveRecord: 0.2ms | Allocations: 25862)
+
+
+Started GET "/dashboard?view=week" for 105.163.157.88 at 2024-01-22 16:26:58 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"week"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_week_calendar.html.erb (Duration: 4.1ms | Allocations: 1540)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 5.1ms | Allocations: 1952)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2024)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 8209)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 10240)
+
+
+Started GET "/dashboard?view=day" for 105.163.157.88 at 2024-01-22 16:27:02 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"day"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_day_calendar.html.erb (Duration: 1.9ms | Allocations: 2206)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 24.1ms | Allocations: 12429)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 12501)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 18686)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.1ms | Allocations: 20730)
+
+
+Started GET "/dashboard?view=month" for 105.163.157.88 at 2024-01-22 16:27:05 +0300
+Cannot render console from 105.163.157.88! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  Parameters: {"view"=>"month"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.2ms | Allocations: 8531)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 6.7ms | Allocations: 8908)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 8980)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 15165)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 17209)
+
+
