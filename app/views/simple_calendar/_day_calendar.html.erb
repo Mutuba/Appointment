@@ -19,11 +19,11 @@
       <tbody>
         <% (0..23).each do |hour| %>
           <tr>
-            <% calendar.date_range.each do |day| %>
               <td class="day_calendar">
+              <%= link_to edit_user_path(@current_user), class: "btn calendar-data", data: { turbo_frame: "remote_modal" } do %>
                 <%= "#{hour}:00" %>
+                <% end %>
               </td>
-            <% end %>
           </tr>
         <% end %>
       </tbody>
