@@ -34,6 +34,7 @@ RSpec.describe Event, type: :model do
     it { should validate_presence_of :name }
     it { should validate_presence_of :start_at }
     it { should validate_presence_of :end_at }
+    it { should validate_presence_of :event_type }
     context 'when required fields are present' do
       it 'is valid' do
         event = create(:event)
