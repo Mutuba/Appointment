@@ -3115,3 +3115,20 @@ Processing by Users::SessionsController#new as HTML
 Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 8935)
 
 
+Started GET "/dashboard" for 105.161.238.76 at 2024-01-23 17:34:36 +0300
+Cannot render console from 105.161.238.76! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 2.6ms | Allocations: 9231)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 2.9ms | Allocations: 9628)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 9713)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 253)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 360)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 819.5ms | Allocations: 48878)
+Completed 200 OK in 831ms (Views: 820.0ms | ActiveRecord: 1.6ms | Allocations: 56404)
+
+
