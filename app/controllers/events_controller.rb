@@ -77,3 +77,16 @@ class EventsController < ApplicationController
                                   :user_id)
   end
 end
+
+# Event object
+
+# Account Creation:
+# The owner creates a Calendly account and sets up their scheduling preferences.
+# This includes specifying their availability, defining meeting types,
+#  and configuring any other relevant settings.
+
+# Event Types:
+# The owner creates different event types based on the nature of the meetings
+#  they want to schedule. They might set up types for initial consultations,
+#  follow-up calls, interviews, or other specific purposes.
+#   Each event type can have its own duration, location (virtual or physical), and other details.

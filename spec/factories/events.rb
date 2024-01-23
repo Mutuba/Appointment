@@ -26,16 +26,17 @@
 #
 #  fk_rails_...  (user_id => users.id)
 #
-class Event < ApplicationRecord
-  belongs_to :user
-
-  validates :user, presence: true
-
-  validates :name, :description, :start_at, :end_at, :event_type, presence: true
-
-  enum event_type: {
-    interview: 0,
-    consultation: 1,
-    follow_up_call: 2
-  }
+FactoryBot.define do
+  factory :event do
+    name { 'Random meeting' }
+    description { 'Awesome description' }
+    color { 'Random #fff' }
+    duration { 30 }
+    event_type { 0 }
+    start_at { Time.now }
+    end_at { Time.now }
+    customer_paid { false }
+    payment_required { false }
+    association :user, factory: :user
+  end
 end

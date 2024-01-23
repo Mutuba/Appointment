@@ -3,6 +3,7 @@
 # lib/simple_calendar/day_calendar.rb
 
 module SimpleCalendar
+  # DayCalendar class implementation
   class DayCalendar < SimpleCalendar::Calendar
     attr_reader :options, :params
 
