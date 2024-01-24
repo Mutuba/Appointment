@@ -3329,3 +3329,35 @@ Completed 200 OK in 12ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 8454
   [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/dashboard" for 105.163.157.74 at 2024-01-24 21:58:05 +0300
+Cannot render console from 105.163.157.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.8ms | Allocations: 9243)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 7.5ms | Allocations: 9640)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 9725)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.2ms | Allocations: 253)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 360)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 39547)
+Completed 200 OK in 134ms (Views: 48.6ms | ActiveRecord: 21.9ms | Allocations: 49900)
+
+
+Started GET "/dashboard" for 105.163.157.74 at 2024-01-24 21:58:54 +0300
+Cannot render console from 105.163.157.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (55.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.3ms | Allocations: 8511)
+  Rendered dashboard/_dashboard_content.html.erb (Duration: 12.2ms | Allocations: 8888)
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 8963)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 341)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1774.8ms | Allocations: 23826)
+Completed 200 OK in 1846ms (Views: 1775.4ms | ActiveRecord: 55.4ms | Allocations: 25895)
+
+
