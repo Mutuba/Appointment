@@ -19,12 +19,11 @@ class EventsController < ApplicationController
   # GET /events/1/edit
   def edit; end
 
-  # POST /events or /events.json
   def create
     @event = Event.new(event_params)
-
+  
     respond_to do |format|
-      if @event.save
+      if validate_start_and_end_time && @event.save
         format.html { redirect_to event_url(@event), notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
@@ -33,11 +32,10 @@ class EventsController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /events/1 or /events/1.json
+  
   def update
     respond_to do |format|
-      if @event.update(event_params)
+      if validate_start_and_end_time && @event.update(event_params)
         format.html { redirect_to event_url(@event), notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
       else
@@ -64,11 +62,23 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
+  def validate_start_and_end_time
+    office_hours_range = current_user.office_hours_start_in_timezone.strftime('%H:%M')..
+    current_user.office_hours_end_in_timezone.strftime('%H:%M')
+
+    time_range = Time.parse(office_hours_range.begin)..Time.parse(office_hours_range.end)
+
+    start_at_param = Time.parse(params[:start_at])
+    end_at_param = Time.parse(params[:end_at])
+
+    time_range.cover?(start_at_param) && time_range.cover?(end_at_param)
+  end
+
   def event_params
     params.require(:event).permit(:name,
                                   :description,
                                   :color,
+                                  :event_type,
                                   :start_at,
                                   :end_at,
                                   :duration,

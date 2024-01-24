@@ -41,4 +41,12 @@ class User < ApplicationRecord
       user.avatar_url = auth.info.image
     end
   end
+
+  def office_hours_start_in_timezone
+    office_hours_start.in_time_zone(timezone)
+  end
+
+  def office_hours_end_in_timezone
+    office_hours_end.in_time_zone(timezone)
+  end
 end

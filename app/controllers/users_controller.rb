@@ -8,6 +8,8 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
+    binding.pry
+
     @user = current_user
     respond_to do |format|
       if @user.update(office_hours_params)
