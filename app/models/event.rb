@@ -46,8 +46,8 @@ class Event < ApplicationRecord
 
     time_range = Time.parse(office_hours_range.begin)..Time.parse(office_hours_range.end)
 
-    errors.add(:start_at, "must be within office hours") unless time_range.cover?(Time.parse(start_at))
-    errors.add(:end_at, "must be within office hours") unless time_range.cover?(Time.parse(start_at))
+    errors.add :start_at, "must be within office hours" unless time_range.cover?(Time.parse(start_at))
+    errors.add :end_at, "must be within office hours" unless time_range.cover?(Time.parse(start_at))
 
   end
 end
