@@ -23,7 +23,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
   
     respond_to do |format|
-      if validate_start_and_end_time && @event.save
+      if @event.save
         format.html { redirect_to event_url(@event), notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
@@ -35,7 +35,7 @@ class EventsController < ApplicationController
   
   def update
     respond_to do |format|
-      if validate_start_and_end_time && @event.update(event_params)
+      if @event.update(event_params)
         format.html { redirect_to event_url(@event), notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
       else
@@ -60,18 +60,6 @@ class EventsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_event
     @event = Event.find(params[:id])
-  end
-
-  def validate_start_and_end_time
-    office_hours_range = current_user.office_hours_start_in_timezone.strftime('%H:%M')..
-    current_user.office_hours_end_in_timezone.strftime('%H:%M')
-
-    time_range = Time.parse(office_hours_range.begin)..Time.parse(office_hours_range.end)
-
-    start_at_param = Time.parse(params[:start_at])
-    end_at_param = Time.parse(params[:end_at])
-
-    time_range.cover?(start_at_param) && time_range.cover?(end_at_param)
   end
 
   def event_params
