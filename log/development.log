@@ -3426,3 +3426,45 @@ Processing by DashboardController#index as HTML
 Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.3ms | Allocations: 17208)
 
 
+Started GET "/" for 105.163.157.74 at 2024-01-25 18:30:03 +0300
+Cannot render console from 105.163.157.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 3375)
+
+
+Started GET "/users/sign_in" for 105.163.157.74 at 2024-01-25 18:30:04 +0300
+Cannot render console from 105.163.157.74! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1195)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 144)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 7265)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 9186)
+
+
+Started GET "/" for 18.206.74.229 at 2024-01-25 18:30:20 +0300
+Cannot render console from 18.206.74.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as */*
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 198)
+
+
+Started GET "/users/sign_in" for 18.206.74.229 at 2024-01-25 18:30:21 +0300
+Cannot render console from 18.206.74.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Users::SessionsController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 888)
+  Rendered devise/sessions/_session_manager.html.erb (Duration: 0.1ms | Allocations: 31)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 6739)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 7363)
+
+
+Started GET "/locations/5" for ::1 at 2024-01-25 18:32:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/locations/5"):
+  

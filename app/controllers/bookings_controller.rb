@@ -3,23 +3,18 @@
 class BookingsController < ApplicationController
   before_action :set_booking, only: %i[show edit update destroy]
 
-  # GET /bookings or /bookings.json
   def index
     @bookings = Booking.all
   end
 
-  # GET /bookings/1 or /bookings/1.json
   def show; end
 
-  # GET /bookings/new
   def new
     @booking = Booking.new
   end
 
-  # GET /bookings/1/edit
   def edit; end
 
-  # POST /bookings or /bookings.json
   def create
     @booking = Booking.new(booking_params)
 
@@ -34,7 +29,6 @@ class BookingsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /bookings/1 or /bookings/1.json
   def update
     respond_to do |format|
       if @booking.update(booking_params)
@@ -47,7 +41,6 @@ class BookingsController < ApplicationController
     end
   end
 
-  # DELETE /bookings/1 or /bookings/1.json
   def destroy
     @booking.destroy
 
