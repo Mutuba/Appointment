@@ -47,6 +47,7 @@ class User < ApplicationRecord
     office_hours_start.in_time_zone(timezone)
   end
 
+  # get office end hours in user's time zone
   def office_hours_end_in_timezone
     office_hours_end.in_time_zone(timezone)
   end
