@@ -1,8 +1,6 @@
 # README
 
-Ruby Urls shortner app that accepts a csv file and uploads creating a batch containing all the url.
-
-The application uses action cable to broadcast upload progress to the UI.
+Appointment app is calendly clone to allows people to book a slot off your calendar after you share with them a link to your calendar
 
 This application uses Ruby version 3.0.2 To install, use rvm or rbenv.
 
@@ -31,11 +29,11 @@ Clone the app
 
 With SSH
 
-`git@github.com:Mutuba/rails_url_shortener_app.git`
+`git@github.com:Mutuba/Appointment.git`
 
 - With HTTPS
 
-`https://github.com/Mutuba/rails_url_shortener_app.git`
+`https://github.com/Mutuba/Appointment.git`
 
 Move into the directory and install all the requirements.
 
@@ -51,8 +49,3 @@ The application can be run by running the below command:-
 
 `rails s` or `rails server`
 
-- The application uses redis and sidekiq for backgroun  
-  d job processing
-- Run this commands in separate terminals to start redis and sidekiq
-
-`redis-server` to start redis server and `bundle exec sidekiq` to start sidekiq server
